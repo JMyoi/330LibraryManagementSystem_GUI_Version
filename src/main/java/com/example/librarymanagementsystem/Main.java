@@ -3,8 +3,10 @@ package com.example.librarymanagementsystem;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -15,9 +17,13 @@ public class Main extends Application {
         //FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
         //Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("C:\\School\\LibraryManagementSystem\\src\\main\\Main.fxml"));
-            Scene scene = new Scene(root,400,400);
-            stage.setTitle("Hewwo");
+            Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            //Group root = new Group();
+            Scene scene = new Scene(root);
+
+            Image bookIcon = new Image("C:src\\main\\java\\bookIcon.png");
+            stage.getIcons().add(bookIcon);
+            stage.setTitle("330 Library management System");
             stage.setScene(scene);
             stage.show();
         }
@@ -27,41 +33,8 @@ public class Main extends Application {
 
     }
     public static void main(String[] args) throws FileNotFoundException {
-          Library library = new Library();
-
-
-//        try {
-//            File inFile = new File("defaultUsers.txt");
-//            Scanner in = new Scanner(inFile);
-//            while(in.hasNext()){
-//                String userName = in.next();
-//                String Password = in.next();
-//                String type = in.next();
-//                System.out.println("Name: "+userName+" password: "+Password+" type: "+type);
-//            }
-//
-//            in.close();
-//        }
-//        catch(FileNotFoundException e){
-//            System.out.println("file not found");
-//            System.out.println(e.getMessage());
-//        }
-
-//        try {
-//            FileReader reader = new FileReader("defaultUsers.txt");
-//            int data = reader.read();
-//            while(data!=-1){
-//                System.out.print((char) data);
-//                data = reader.read();
-//            }
-//        }
-//        catch(FileNotFoundException e){
-//            System.out.println("file not found");
-//            System.out.println(e.getMessage());
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-
+        launch(args);
+        Library library = new Library();
 
         while(true) {
             Scanner in = new Scanner(System.in);
