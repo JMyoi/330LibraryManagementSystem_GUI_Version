@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec39cd9-08a8-42f5-8bc9-0361c1629a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bookIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bookIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/login.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +58,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\School\LibraryManagementSystem\src\main\resources\com\example\librarymanagementsystem" />
       <recent name="C:\School\LibraryManagementSystem\src\main\java" />
       <recent name="C:\School\LibraryManagementSystem\src\main" />
       <recent name="C:\School\LibraryManagementSystem\src\main\java\com\example\librarymanagementsystem" />
-      <recent name="C:\School\LibraryManagementSystem\src\main\resources\com\example\librarymanagementsystem" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700717636815</updated>
-      <workItem from="1700717637840" duration="6511000" />
+      <workItem from="1700717637840" duration="7117000" />
     </task>
     <servers />
   </component>
