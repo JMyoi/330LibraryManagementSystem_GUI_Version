@@ -10,25 +10,37 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class Main extends Application {
     Library library = new Library();
 
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            stage.setTitle("330 Library management System");
-            stage.setScene(scene);
-            stage.show();
-            PM();
-            library.myB();
+//            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
+//            Scene scene = new Scene(fxmlLoader.load());
+//            stage.setTitle("330 Library management System");
+//            stage.setScene(scene);
+//            stage.show();
+            library.showLogin(stage);
+//            Timer timer = new Timer();
+//            TimerTask task = new TimerTask() {
+//                @Override public void run() {
+//                    System.out.println("Current user after: " + library.getCurrentUser());
+//                }
+//            };
+//            timer.scheduleAtFixedRate(task, 0, 1000);
+
         }
         catch(Exception e){
             e.printStackTrace();
         }
 
     }
+
+
 
     public void PM(){
         System.out.println("after launch: "+library.printMe());

@@ -18,4 +18,5 @@
    <TextField fx:id="userNameText" layoutX="136.0" layoutY="154.0" prefHeight="36.0" prefWidth="198.0" promptText="UserName" />
    <Button fx:id="logInButton" layoutX="197.0" layoutY="276.0" mnemonicParsing="false" onAction="#logIn" text="Log In" />
    <Button fx:id="createAccountButton" layoutX="174.0" layoutY="318.0" mnemonicParsing="false" text="Create account" />
+   <Label fx:id="errorLabel" layoutX="168.0" layoutY="124.0" />
 </AnchorPane>
