@@ -15,13 +15,8 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
-            //Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-            //Group root = new Group();
             Scene scene = new Scene(fxmlLoader.load());
 
-
-            //Image bookIcon = new Image("bookIcon.png");
-            //stage.getIcons().add(bookIcon);
             stage.setTitle("330 Library management System");
             stage.setScene(scene);
             stage.show();
