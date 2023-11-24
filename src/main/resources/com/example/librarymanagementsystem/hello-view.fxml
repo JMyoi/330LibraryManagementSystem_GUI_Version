@@ -12,5 +12,6 @@
 
     <Label fx:id="welcomeText" />
     <Button onAction="#onHelloButtonClick" text="Hello!" />
+   <Button mnemonicParsing="false" onAction="#switchTologinScene" text="Switch to login" />
 
 </VBox>

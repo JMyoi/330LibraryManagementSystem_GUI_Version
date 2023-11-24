@@ -1,5 +1,6 @@
 package com.example.librarymanagementsystem;
 
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,8 +9,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import javafx.scene.Node;
 
 import java.io.IOException;
+
 
 
 public class Controller {
@@ -40,13 +43,37 @@ public class Controller {
         System.out.println("right");
     }
 
-
+    @FXML
     private Stage stage;
+    @FXML
+
     private Scene scene;
+    @FXML
+
     private Parent root;
-    public void switchTologinScene(ActionEvent e) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("login.fxml"));
-        stage =(Stage)((Node).event.getSource()).getScene().getWindow();_
+    @FXML
+
+    private FXMLLoader fxmlLoader;
+
+
+    @FXML
+    public void switchTologinScene(ActionEvent event) throws IOException {
+        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
+        //root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+
+    public void switchToHelloScene(ActionEvent event) throws IOException {
+       fxmlLoader = new FXMLLoader(Controller.class.getResource("hello-view.fxml"));
+        //root = FXMLLoader.load(getClass().getResource("C:\\School\\LibraryManagementSystem\\src\\main\\resources\\com\\example\\librarymanagementsystem\\hello-view.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
 }
