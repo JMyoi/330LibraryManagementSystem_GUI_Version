@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.scene.Node;
@@ -16,11 +18,24 @@ import java.io.IOException;
 
 
 public class Controller {
+
+    @FXML
+    TextField userNameText;
+    @FXML
+    PasswordField passwordText;
+    @FXML
+    public void logIn() {
+        String UserName = userNameText.getText();
+        String pass = passwordText.getText();
+        System.out.println(UserName+pass);
+    }
+
+
     @FXML
     private Label welcomeText;
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Welcomo JavaFX Application!");
+        welcomeText.setText("Welcome to JavaFX Application!");
     }
     @FXML
     private Circle myCircle;
@@ -75,5 +90,6 @@ public class Controller {
         stage.setScene(scene);
         stage.show();
     }
+
 
 }

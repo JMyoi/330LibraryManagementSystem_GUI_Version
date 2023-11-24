@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="395.0" prefWidth="504.0" stylesheets="@../../../../java/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.Controller">
-   <children>
-      <Button layoutX="347.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToHelloScene" text="Switch to HelloView" />
-   </children>
+<AnchorPane prefHeight="460.0" prefWidth="470.0" stylesheets="@../../../../java/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.Library">
+   <Button layoutX="314.0" layoutY="394.0" mnemonicParsing="false" onAction="#switchToHelloScene" text="Switch to HelloView" />
+   <Label layoutX="55.0" layoutY="56.0" prefHeight="68.0" prefWidth="384.0" text="Welcome to 330 Library Management System">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Label>
+   <PasswordField fx:id="passwordText" layoutX="136.0" layoutY="212.0" prefHeight="36.0" prefWidth="198.0" promptText="Password" />
+   <TextField fx:id="userNameText" layoutX="136.0" layoutY="154.0" prefHeight="36.0" prefWidth="198.0" promptText="UserName" />
+   <Button fx:id="logInButton" layoutX="197.0" layoutY="276.0" mnemonicParsing="false" onAction="#logIn" text="Log In" />
+   <Button fx:id="createAccountButton" layoutX="174.0" layoutY="318.0" mnemonicParsing="false" text="Create account" />
 </AnchorPane>

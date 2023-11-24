@@ -1,15 +1,27 @@
 package com.example.librarymanagementsystem;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import javafx.scene.Node;
 
 public class Library {
     private ArrayList<Book> books;
     private ArrayList<User> users;
     private ArrayList<Transaction> transactions;
     private User currentUser;
+
+    private final String constantStr = "HIHI";
+    private Book testB = new Book();
      //private Scanner input = new Scanner(System.in);
 
 
@@ -30,7 +42,36 @@ public class Library {
     public User getCurrentUser(){
         return currentUser;
     }
+    @FXML
+    private TextField userNameText;
+    @FXML
+    private PasswordField passwordText;
+    public void logIn(ActionEvent actionEvent) {
+        String UserName = userNameText.getText();
+        String pass = passwordText.getText();
+        System.out.println(UserName+pass);
+
+        boolean isThere= false;
+        for(User user: users){
+            if(user.getName().equals(UserName) && user.authenticate(pass)){
+                currentUser = user;
+                isThere = true;
+                break;
+            }
+        }
+        System.out.println("is it there? "+isThere);
+        System.out.println("this librarys constant: "+printMe());
+        myB();
+
+    }
+    public void myB(){
+        System.out.println("this objects book"+testB.toString());
+    }
+    public int printMe(){
+        return constantStr.hashCode();
+    }
     public boolean Login(String userName, String pass){
+
         boolean isThere= false;
         for(User user: users){
             if(user.getName().equals(userName) && user.authenticate(pass)){
@@ -40,6 +81,7 @@ public class Library {
             }
         }
         return isThere;
+
     }
     public void Logout(){
         currentUser = new User();
@@ -242,4 +284,23 @@ public class Library {
         }
     }
 
+    @FXML
+    private Stage stage;
+    @FXML
+
+    private Scene scene;
+
+    @FXML
+
+    private FXMLLoader fxmlLoader;
+    @FXML
+
+    public void switchToHelloScene(ActionEvent event) throws IOException {
+        fxmlLoader = new FXMLLoader(Controller.class.getResource("hello-view.fxml"));
+        //root = FXMLLoader.load(getClass().getResource("C:\\School\\LibraryManagementSystem\\src\\main\\resources\\com\\example\\librarymanagementsystem\\hello-view.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
 }
