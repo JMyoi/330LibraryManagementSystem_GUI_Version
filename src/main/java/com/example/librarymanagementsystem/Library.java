@@ -117,8 +117,13 @@ public class Library {
         return constantStr.hashCode();
     }
 
-    public void Logout(){
+    public void Logout(ActionEvent event) throws IOException {
         currentUser = new User();
+        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
     //can only be done by librarians
@@ -135,30 +140,36 @@ public class Library {
         }
     }
 
-    public void addUser() {
-        Scanner input = new Scanner(System.in);//____________________________________________________
-        System.out.println("Enter the Users Name");
-        String name = input.nextLine();
-        //make sure the userName is unique
-        for (User user : users) {
-            if (user.getName().equals(name)) {
-                System.out.println("User name already taken please use another name.");
-                return;
-            }
-        }
-        System.out.println("Create a password: ");
-        String password = input.nextLine();
-        System.out.println("Is the new user a Librarian or Member? Enter L or M ");
-        String UserType = input.nextLine();
-        if (UserType.equals("L")) {
-            Librarian temp = new Librarian( name, password);
-            users.add(temp);
-        } else if (UserType.equals("M")) {
-            Member temp = new Member(name, password);
-            users.add(temp);
-        } else {
-            System.out.println("INVALID INPUT");
-        }
+    public void addUser(ActionEvent event) throws IOException {
+        fxmlLoader = new FXMLLoader(Controller.class.getResource("CreateAccountPage.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+
+//        Scanner input = new Scanner(System.in);//____________________________________________________
+//        System.out.println("Enter the Users Name");
+//        String name = input.nextLine();
+//        //make sure the userName is unique
+//        for (User user : users) {
+//            if (user.getName().equals(name)) {
+//                System.out.println("User name already taken please use another name.");
+//                return;
+//            }
+//        }
+//        System.out.println("Create a password: ");
+//        String password = input.nextLine();
+//        System.out.println("Is the new user a Librarian or Member? Enter L or M ");
+//        String UserType = input.nextLine();
+//        if (UserType.equals("L")) {
+//            Librarian temp = new Librarian( name, password);
+//            users.add(temp);
+//        } else if (UserType.equals("M")) {
+//            Member temp = new Member(name, password);
+//            users.add(temp);
+//        } else {
+//            System.out.println("INVALID INPUT");
+//        }
     }
 
     public void addBook(){

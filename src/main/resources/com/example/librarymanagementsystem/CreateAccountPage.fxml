@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.Library">
+   <children>
+      <Label layoutX="203.0" layoutY="35.0" text="Create an Account">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBttn" layoutX="26.0" layoutY="23.0" mnemonicParsing="false" onAction="#Logout" text="Back" />
+      <TextField layoutX="225.0" layoutY="139.0" promptText="User Name" />
+      <TextField layoutX="225.0" layoutY="187.0" promptText="Password" />
+      <Label fx:id="nameTakenLabel" layoutX="246.0" layoutY="82.0" textFill="#ef0000" />
+      <Label layoutX="271.0" layoutY="230.0" text="User Type">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="261.0" layoutY="257.0" mnemonicParsing="false" text="Member">
+         <toggleGroup>
+            <ToggleGroup fx:id="typeRadioBttn" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="260.0" layoutY="282.0" mnemonicParsing="false" text="Librarian" toggleGroup="$typeRadioBttn" />
+      <Button layoutX="269.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Create" />
+   </children>
+</AnchorPane>
