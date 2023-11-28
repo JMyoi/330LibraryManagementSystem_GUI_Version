@@ -1,17 +1,40 @@
 package com.example.librarymanagementsystem;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+import javafx.scene.Node;
 
 public class Library {
+    @FXML
+    private Stage stage;
+    @FXML
+
+    private Scene scene;
+
+    @FXML
+
+    private FXMLLoader fxmlLoader;
+
     private ArrayList<Book> books;
     private ArrayList<User> users;
     private ArrayList<Transaction> transactions;
     private User currentUser;
-     //private Scanner input = new Scanner(System.in);
 
+    private final String constantStr = "HIHI";
+    private Book testB = new Book();
 
     public Library(){
         books = new ArrayList<>();
@@ -30,17 +53,70 @@ public class Library {
     public User getCurrentUser(){
         return currentUser;
     }
-    public boolean Login(String userName, String pass){
+    @FXML
+    private TextField userNameText;
+    @FXML
+    private PasswordField passwordText;
+    @FXML
+    private Label errorLabel;
+    @FXML
+    private Label welcomeLabelM;
+    @FXML
+    private Label welcomeLabelL;
+    public void showLogin(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setTitle("330 Library management System");
+            stage.setScene(scene);
+            stage.show();
+    }
+    @FXML
+    public void logIn(ActionEvent event) throws IOException {
+        String UserName = userNameText.getText();
+        String pass = passwordText.getText();
+        System.out.println(UserName+pass);
+
         boolean isThere= false;
         for(User user: users){
-            if(user.getName().equals(userName) && user.authenticate(pass)){
+            if(user.getName().equals(UserName) && user.authenticate(pass)){
                 currentUser = user;
                 isThere = true;
                 break;
             }
         }
-        return isThere;
+        if(isThere){
+            System.out.println("logged in");
+            //go to the main menu for respective user types
+            if(currentUser instanceof Member){
+                fxmlLoader = new FXMLLoader(Controller.class.getResource("MemberMenu.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(fxmlLoader.load());
+                stage.setScene(scene);
+                stage.show();
+            }
+            else if(currentUser instanceof Librarian){
+                fxmlLoader = new FXMLLoader(Controller.class.getResource("LibrarianMenu.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(fxmlLoader.load());
+                stage.setScene(scene);
+                stage.show();
+            }
+        }
+        else{
+            System.out.println("Incorrect credentials");
+            errorLabel.setText("Incorrect credentials");
+
+        }
+
     }
+
+    public void myB(){
+        System.out.println("this objects book"+testB.toString());
+    }
+    public int printMe(){
+        return constantStr.hashCode();
+    }
+
     public void Logout(){
         currentUser = new User();
     }
@@ -241,5 +317,18 @@ public class Library {
             //System.out.println("name: "+BookName+"author: "+author+"ISBN: "+ISBN+"amount: "+amount);
         }
     }
+
+
+    @FXML
+
+    public void switchToHelloScene(ActionEvent event) throws IOException {
+        fxmlLoader = new FXMLLoader(Controller.class.getResource("hello-view.fxml"));
+        //root = FXMLLoader.load(getClass().getResource("C:\\School\\LibraryManagementSystem\\src\\main\\resources\\com\\example\\librarymanagementsystem\\hello-view.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 }
