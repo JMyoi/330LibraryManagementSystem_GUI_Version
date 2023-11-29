@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -27,7 +28,6 @@ public class Library {
     @FXML
 
     private FXMLLoader fxmlLoader;
-
     private ArrayList<Book> books;
     private ArrayList<User> users;
     private ArrayList<Transaction> transactions;
@@ -139,37 +139,56 @@ public class Library {
             System.out.println("****************************************************");
         }
     }
-
-    public void addUser(ActionEvent event) throws IOException {
+    public void switchSceneToCreateAccount(ActionEvent event) throws IOException {
         fxmlLoader = new FXMLLoader(Controller.class.getResource("CreateAccountPage.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
+    }
+    @FXML
+    private TextField newUserName, newUserPass;
+    @FXML
+    private Label nameTakenLabel, typeNotSelectedLabel;
+    @FXML
+    private RadioButton memberBttn,LibrarianBttn;
 
-//        Scanner input = new Scanner(System.in);//____________________________________________________
-//        System.out.println("Enter the Users Name");
-//        String name = input.nextLine();
-//        //make sure the userName is unique
-//        for (User user : users) {
-//            if (user.getName().equals(name)) {
-//                System.out.println("User name already taken please use another name.");
-//                return;
-//            }
-//        }
-//        System.out.println("Create a password: ");
-//        String password = input.nextLine();
-//        System.out.println("Is the new user a Librarian or Member? Enter L or M ");
-//        String UserType = input.nextLine();
-//        if (UserType.equals("L")) {
-//            Librarian temp = new Librarian( name, password);
-//            users.add(temp);
-//        } else if (UserType.equals("M")) {
-//            Member temp = new Member(name, password);
-//            users.add(temp);
-//        } else {
-//            System.out.println("INVALID INPUT");
-//        }
+    public void addUser(ActionEvent event) throws IOException {
+        nameTakenLabel.setText("");
+        typeNotSelectedLabel.setText("");
+        String name = newUserName.getText();
+        String password = newUserPass.getText();
+        System.out.println("new user will be: "+name+" and pass is "+password);
+        //make sure the userName is unique
+        for (User user : users) {
+            if (user.getName().equals(name)) {
+                System.out.println("User name already taken please use another name.");
+                nameTakenLabel.setText("Name already taken.");
+                return;
+            }
+        }
+        if(memberBttn.isSelected()){
+            System.out.println("member button was selected");
+            Member temp = new Member(name, password);
+            users.add(temp);
+        }
+        else if (LibrarianBttn.isSelected()){
+            System.out.println("librarian button was selected");
+            Librarian temp = new Librarian( name, password);
+            users.add(temp);
+        }
+        else{
+            System.out.println("No member type was selected!!");
+            typeNotSelectedLabel.setText("Please select a type.");
+            return;
+        }
+        displayUsers();
+        //switch to login screen
+        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void addBook(){
@@ -340,6 +359,7 @@ public class Library {
         stage.setScene(scene);
         stage.show();
     }
+
 
 
 }

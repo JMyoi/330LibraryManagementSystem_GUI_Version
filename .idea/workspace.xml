@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec39cd9-08a8-42f5-8bc9-0361c1629a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,8 @@
       <workItem from="1700717637840" duration="7117000" />
       <workItem from="1700786365169" duration="184000" />
       <workItem from="1700786560000" duration="16810000" />
-      <workItem from="1700859662505" duration="3004000" />
+      <workItem from="1700859662505" duration="5407000" />
+      <workItem from="1701276727661" duration="4281000" />
     </task>
     <servers />
   </component>
