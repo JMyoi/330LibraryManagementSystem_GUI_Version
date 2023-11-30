@@ -48,6 +48,7 @@ public class Library {
     public User getCurrentUser(){
         return currentUser;
     }
+    public String getCurrentUserName(){ return currentUser.getName();}
     @FXML
     private TextField userNameText;
     @FXML
@@ -82,13 +83,14 @@ public class Library {
     }
 
 
-    public void Logout(ActionEvent event) throws IOException {
+    public void Logout(){
         currentUser = new User();
-        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        System.out.println("logged out sucessfull: userName: "+currentUser.getName());
+//        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
+//        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+//        scene = new Scene(fxmlLoader.load());
+//        stage.setScene(scene);
+//        stage.show();
     }
 
     //can only be done by librarians
@@ -104,13 +106,7 @@ public class Library {
             System.out.println("****************************************************");
         }
     }
-    public void switchSceneToCreateAccount(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(Controller.class.getResource("CreateAccountPage.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
-    }
+
     @FXML
     private TextField newUserName, newUserPass;
     @FXML
@@ -154,6 +150,11 @@ public class Library {
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
+    }
+    public void addBob(){
+        Member temp = new Member("BOB", "BOB");
+        users.add(temp);
+        System.out.println("Bob added.");
     }
 
     public void addBook(){
