@@ -8,14 +8,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.Library">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.CreateAccountPageController">
    <children>
       <Label layoutX="203.0" layoutY="35.0" text="Create an Account">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="backBttn" layoutX="26.0" layoutY="23.0" mnemonicParsing="false" onAction="#Logout" text="Back" />
+      <Button fx:id="backBttn" layoutX="26.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" text="Back" />
       <TextField fx:id="newUserName" layoutX="225.0" layoutY="122.0" promptText="User Name" />
       <TextField fx:id="newUserPass" layoutX="226.0" layoutY="159.0" promptText="Password" />
       <Label fx:id="nameTakenLabel" layoutX="246.0" layoutY="82.0" textFill="#ef0000" />

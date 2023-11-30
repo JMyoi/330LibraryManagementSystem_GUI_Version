@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="loginAnchor" prefHeight="460.0" prefWidth="470.0" stylesheets="@../../../../java/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.loginController">
-   <Button layoutX="314.0" layoutY="394.0" mnemonicParsing="false" onAction="#switchToHelloScene" text="Switch to HelloView" />
    <Label layoutX="55.0" layoutY="56.0" prefHeight="68.0" prefWidth="384.0" text="Welcome to 330 Library Management System">
       <font>
          <Font size="17.0" />

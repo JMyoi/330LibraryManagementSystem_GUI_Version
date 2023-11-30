@@ -86,11 +86,6 @@ public class Library {
     public void Logout(){
         currentUser = new User();
         System.out.println("logged out sucessfull: userName: "+currentUser.getName());
-//        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
-//        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        scene = new Scene(fxmlLoader.load());
-//        stage.setScene(scene);
-//        stage.show();
     }
 
     //can only be done by librarians
@@ -107,50 +102,29 @@ public class Library {
         }
     }
 
-    @FXML
-    private TextField newUserName, newUserPass;
-    @FXML
-    private Label nameTakenLabel, typeNotSelectedLabel;
-    @FXML
-    private RadioButton memberBttn,LibrarianBttn;
+   public boolean isUserNameTaken(String name){
+       for (User user : users) {
+           if (user.getName().equals(name)) {
+               System.out.println("User name already taken please use another name.");
+               return true;
+           }
+       }
+       return false;
+   }
 
-    public void addUser(ActionEvent event) throws IOException {
-        nameTakenLabel.setText("");
-        typeNotSelectedLabel.setText("");
-        String name = newUserName.getText();
-        String password = newUserPass.getText();
-        System.out.println("new user will be: "+name+" and pass is "+password);
-        //make sure the userName is unique
-        for (User user : users) {
-            if (user.getName().equals(name)) {
-                System.out.println("User name already taken please use another name.");
-                nameTakenLabel.setText("Name already taken.");
-                return;
-            }
-        }
-        if(memberBttn.isSelected()){
-            System.out.println("member button was selected");
-            Member temp = new Member(name, password);
+    public void addUser(String name, String pass, String type)  {
+        if(type.equals("M")){
+            Member temp = new Member(name, pass);
             users.add(temp);
-        }
-        else if (LibrarianBttn.isSelected()){
-            System.out.println("librarian button was selected");
-            Librarian temp = new Librarian( name, password);
+            System.out.println("member: "+name+"added successfully");
+        } else if (type.equals("L")) {
+            Librarian temp = new Librarian(name, pass);
             users.add(temp);
+            System.out.println("librarian: "+name+" added successfully");
         }
-        else{
-            System.out.println("No member type was selected!!");
-            typeNotSelectedLabel.setText("Please select a type.");
-            return;
-        }
-        displayUsers();
-        //switch to login screen
-        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+
     }
+    
     public void addBob(){
         Member temp = new Member("BOB", "BOB");
         users.add(temp);

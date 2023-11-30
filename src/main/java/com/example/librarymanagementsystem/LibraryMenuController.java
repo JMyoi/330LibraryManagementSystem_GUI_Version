@@ -11,8 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-
-public class memberMenuController {
+public class LibraryMenuController {
     Library library = new Library();
     @FXML
     Parent root;
@@ -21,30 +20,25 @@ public class memberMenuController {
     @FXML
     private Scene scene;
     @FXML
-    Label welcomeLabelM;
+    Label welcomeLabelL;
     public void displayName(String username, Library lib){
-        welcomeLabelM.setText("Welcome Member: "+ username);
+        welcomeLabelL.setText("Welcome Librarian: "+ username);
         System.out.println(username);
         library = lib;
-//        library.displayUsers();
-//        System.out.println("CurrentUser = "+ library.getCurrentUserName());
     }
 
-    public void Logout(ActionEvent event) throws IOException {
-        System.out.println("Logout pressed From memberController: ");
+    public void Logout(ActionEvent actionEvent) throws IOException {
+        System.out.println("Logout pressed From LibrarymenuController: ");
         library.displayUsers();
         System.out.println("CurrentUser = "+ library.getCurrentUserName());
-
         library.Logout();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         root = loader.load();
         loginController logincontroller = loader.getController();
         logincontroller.receiveLibrary(library);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
     }
-
 }

@@ -21,12 +21,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Main extends Application {
-    @FXML
-    private Stage stage;
-    @FXML
-    private Scene scene;
-    @FXML
-    private FXMLLoader fxmlLoader;
+
     @Override
     public void start(Stage stage) throws IOException {
         try {
@@ -41,41 +36,7 @@ public class Main extends Application {
         }
 
     }
-    @FXML
-    private TextField userNameText;
-    @FXML
-    private PasswordField passwordText;
-    @FXML
-    private Label errorLabel;
 
-
-//    @FXML
-//    public void switchSceneToCreateAccount(ActionEvent event) throws IOException {
-//        System.out.println("current user is "+library.getCurrentUserName());
-//        library.displayUsers();
-//
-//        fxmlLoader = new FXMLLoader(Controller.class.getResource("CreateAccountPage.fxml"));
-//        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        scene = new Scene(fxmlLoader.load());
-//        stage.setScene(scene);
-//        stage.show();
-//
-//    }
-
-    @FXML
-    public void switchTologinScene(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
-    }
-    @FXML
-    private Label welcomeText;
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
 
 
     public static void main(String[] args) throws FileNotFoundException {

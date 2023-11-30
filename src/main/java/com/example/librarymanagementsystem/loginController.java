@@ -49,9 +49,12 @@ public class loginController {
 
             }
             else if (library.getCurrentUserType().equals("L")) {
-                fxmlLoader = new FXMLLoader(Controller.class.getResource("LibrarianMenu.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("LibrarianMenu.fxml"));
+                root = loader.load();
+                LibraryMenuController librarymenucontroller = loader.getController();
+                librarymenucontroller.displayName(UserName, library);
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                scene = new Scene(fxmlLoader.load());
+                scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
             }
@@ -68,9 +71,18 @@ public class loginController {
     public void receiveLibrary(Library lib){
         library = lib;
         System.out.println("library received in login controller");
+        library.displayUsers();
     }
 
-    public void switchSceneToCreateAccount(ActionEvent actionEvent) {
+    public void switchSceneToCreateAccount(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CreateAccountPage.fxml"));
+        root = loader.load();
+        CreateAccountPageController createaccountpagecontroller = loader.getController();
+        createaccountpagecontroller.receieveLibrary(library);
+        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 
