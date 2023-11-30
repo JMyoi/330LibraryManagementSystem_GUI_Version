@@ -22,20 +22,13 @@ public class Library {
     @FXML
     private Stage stage;
     @FXML
-
     private Scene scene;
-
     @FXML
-
     private FXMLLoader fxmlLoader;
     private ArrayList<Book> books;
     private ArrayList<User> users;
     private ArrayList<Transaction> transactions;
     private User currentUser;
-
-    private final String constantStr = "HIHI";
-    private Book testB = new Book();
-
     public Library(){
         books = new ArrayList<>();
         users = new ArrayList<>();
@@ -49,7 +42,9 @@ public class Library {
             System.out.println("file not found");
             System.out.println(e.getMessage());
         }
+        loadDefaultTransactions();
     }
+
     public User getCurrentUser(){
         return currentUser;
     }
@@ -63,59 +58,29 @@ public class Library {
     private Label welcomeLabelM;
     @FXML
     private Label welcomeLabelL;
-    public void showLogin(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            stage.setTitle("330 Library management System");
-            stage.setScene(scene);
-            stage.show();
-    }
-    @FXML
-    public void logIn(ActionEvent event) throws IOException {
-        String UserName = userNameText.getText();
-        String pass = passwordText.getText();
-        System.out.println(UserName+pass);
 
-        boolean isThere= false;
+    public boolean logIn(String Name, String Pass) throws IOException {
         for(User user: users){
-            if(user.getName().equals(UserName) && user.authenticate(pass)){
+            if(user.getName().equals(Name) && user.authenticate(Pass)){
                 currentUser = user;
-                isThere = true;
-                break;
+                System.out.println("logged in");
+                return true;
             }
         }
-        if(isThere){
-            System.out.println("logged in");
-            //go to the main menu for respective user types
+        return false;
+
+    }
+
+    public String getCurrentUserType(){
             if(currentUser instanceof Member){
-                fxmlLoader = new FXMLLoader(Controller.class.getResource("MemberMenu.fxml"));
-                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                scene = new Scene(fxmlLoader.load());
-                stage.setScene(scene);
-                stage.show();
+                return "M";
             }
             else if(currentUser instanceof Librarian){
-                fxmlLoader = new FXMLLoader(Controller.class.getResource("LibrarianMenu.fxml"));
-                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                scene = new Scene(fxmlLoader.load());
-                stage.setScene(scene);
-                stage.show();
+                return "L";
             }
-        }
-        else{
-            System.out.println("Incorrect credentials");
-            errorLabel.setText("Incorrect credentials");
-
-        }
-
+            return "NONE";
     }
 
-    public void myB(){
-        System.out.println("this objects book"+testB.toString());
-    }
-    public int printMe(){
-        return constantStr.hashCode();
-    }
 
     public void Logout(ActionEvent event) throws IOException {
         currentUser = new User();
@@ -272,7 +237,7 @@ public class Library {
         }
     }
     public void printCurrentUserTransactions(){
-        Scanner input = new Scanner(System.in);//____________________________________________________
+        Scanner input = new Scanner(System.in);
         if(transactions.isEmpty()){
             System.out.println("No Transactions");
             return;
@@ -345,6 +310,29 @@ public class Library {
             Book temp = new Book(ISBN, BookName, author, Integer.parseInt(amount));
             books.add(temp);
             //System.out.println("name: "+BookName+"author: "+author+"ISBN: "+ISBN+"amount: "+amount);
+        }
+    }
+    private void loadDefaultTransactions(){
+        //make transactions for user 1
+        for(int i = 35; i<40; i++){
+            Transaction newTransaction = new Transaction(users.get(1).getId(), users.get(1).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            transactions.add(newTransaction);
+        }
+        for(int i = 0; i<4; i++){
+            Transaction newTransaction = new Transaction(users.get(2).getId(), users.get(2).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            transactions.add(newTransaction);
+        }
+        for(int i = 15; i<19; i++){
+            Transaction newTransaction = new Transaction(users.get(3).getId(), users.get(3).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            transactions.add(newTransaction);
+        }
+        for(int i = 20; i<24; i++){
+            Transaction newTransaction = new Transaction(users.get(4).getId(), users.get(4).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            transactions.add(newTransaction);
+        }
+        for(int i = 5; i<10; i++){
+            Transaction newTransaction = new Transaction(users.get(5).getId(), users.get(5).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            transactions.add(newTransaction);
         }
     }
 

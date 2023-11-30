@@ -1,10 +1,16 @@
 package com.example.librarymanagementsystem;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
@@ -15,35 +21,78 @@ import java.util.TimerTask;
 
 public class Main extends Application {
     Library library = new Library();
-
+    @FXML
+    private Stage stage;
+    @FXML
+    private Scene scene;
+    @FXML
+    private FXMLLoader fxmlLoader;
     @Override
     public void start(Stage stage) throws IOException {
         try {
-//            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
-//            Scene scene = new Scene(fxmlLoader.load());
-//            stage.setTitle("330 Library management System");
-//            stage.setScene(scene);
-//            stage.show();
-            library.showLogin(stage);
-//            Timer timer = new Timer();
-//            TimerTask task = new TimerTask() {
-//                @Override public void run() {
-//                    System.out.println("Current user after: " + library.getCurrentUser());
-//                }
-//            };
-//            timer.scheduleAtFixedRate(task, 0, 1000);
-
+            //library.showLogin(stage);
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setTitle("330 Library management System");
+            stage.setScene(scene);
+            stage.show();
         }
         catch(Exception e){
             e.printStackTrace();
         }
 
     }
-
-
-
-    public void PM(){
-        System.out.println("after launch: "+library.printMe());
+    @FXML
+    private TextField userNameText;
+    @FXML
+    private PasswordField passwordText;
+    @FXML
+    private Label errorLabel;
+    @FXML
+    public void handleLogin(ActionEvent event) throws IOException {
+        String UserName = userNameText.getText();
+        String pass = passwordText.getText();
+        System.out.println(UserName+pass);
+        if(library.logIn(UserName, pass)){
+            if(library.getCurrentUserType().equals("M")){
+                fxmlLoader = new FXMLLoader(Controller.class.getResource("MemberMenu.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(fxmlLoader.load());
+                stage.setScene(scene);
+                stage.show();
+            }
+            else if (library.getCurrentUserType().equals("L")){
+                fxmlLoader = new FXMLLoader(Controller.class.getResource("LibrarianMenu.fxml"));
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(fxmlLoader.load());
+                stage.setScene(scene);
+                stage.show();
+            }
+        }
+        else{
+            errorLabel.setText("Incorrect credentials.");
+            System.out.println("Incorrect credentials");
+        }
+    }
+    @FXML
+    public void switchSceneToCreateAccount(ActionEvent actionEvent) {
+    }
+    @FXML
+    public void switchToHelloScene(ActionEvent actionEvent) {
+    }
+    @FXML
+    public void switchTologinScene(ActionEvent event) throws IOException {
+        fxmlLoader = new FXMLLoader(Controller.class.getResource("login.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    private Label welcomeText;
+    @FXML
+    protected void onHelloButtonClick() {
+        welcomeText.setText("Welcome to JavaFX Application!");
     }
 
 
@@ -132,4 +181,24 @@ public class Main extends Application {
 //
 //        }
     }
+
+
+
 }
+
+
+
+//            Timer timer = new Timer();
+//            TimerTask task = new TimerTask() {
+//                @Override public void run() {
+//                    System.out.println("Current user after: " + library.getCurrentUser());
+//                }
+//            };
+//            timer.scheduleAtFixedRate(task, 0, 1000);
+
+
+//            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
+//            Scene scene = new Scene(fxmlLoader.load());
+//            stage.setTitle("330 Library management System");
+//            stage.setScene(scene);
+//            stage.show();

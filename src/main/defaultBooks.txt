@@ -34,3 +34,195 @@ Alice's Adventures in Wonderland
 Lewis Carroll
 0-14-044550-7
 10
+The Little Prince
+Antoine de Saint-Exupéry
+0-316-00046-X
+20
+Wuthering Heights
+Emily Brontë
+0-19-282346-2
+10
+Alice's Adventures in Wonderland
+Lewis Carroll
+0-14-044550-7
+10
+Pride and Prejudice
+Jane Austen
+0-14-143951-3
+7
+The Catcher in the Rye
+J.D. Salinger
+0-316-76948-7
+8
+The Hobbit
+J.R.R. Tolkien
+0-618-00221-9
+12
+The Great Expectations
+Charles Dickens
+0-14-143951-1
+5
+Moby-Dick
+Herman Melville
+0-06-083867-1
+6
+The Odyssey
+Homer
+0-19-283375-7
+9
+One Hundred Years of Solitude
+Gabriel García Márquez
+0-06-112009-X
+15
+The Chronicles of Narnia
+C.S. Lewis
+0-06-447109-1
+12
+Brave New World
+Aldous Huxley
+0-06-085052-3
+10
+The Art of War
+Sun Tzu
+0-19-501476-6
+8
+The Grapes of Wrath
+John Steinbeck
+0-14-2000663-4
+10
+The Count of Monte Cristo
+Alexandre Dumas
+1-4021-2279-4
+14
+Crime and Punishment
+Fyodor Dostoevsky
+0-679-72243-4
+7
+The Picture of Dorian Gray
+Oscar Wilde
+0-14-143951-1
+6
+The Hitchhiker's Guide to the Galaxy
+Douglas Adams
+0-345-39181-0
+11
+The Mythical Man-Month: Essays on Software Engineering
+Frederick P. Brooks Jr.
+978-0201835953
+10
+Structure and Interpretation of Computer Programs
+Harold Abelson and Gerald Jay Sussman
+978-0262510875
+15
+Artificial Intelligence: A Modern Approach
+Stuart Russell and Peter Norvig
+978-0136042594
+10
+Computer Networking: Principles, Protocols and Practice
+Olivier Bonaventure
+978-1107017540
+8
+Head First Java
+Kathy Sierra and Bert Bates
+978-0596009205
+12
+The C Programming Language
+Brian W. Kernighan and Dennis M. Ritchie
+978-0131103627
+10
+Computer Systems: A Programmer's Perspective
+Randal E. Bryant and David R. O'Hallaron
+978-0134092669
+10
+The Web Application Hacker's Handbook
+Dafydd Stuttard and Marcus Pinto
+978-1118026472
+7
+Artificial Intelligence: Foundations of Computational Agents
+David L. Poole and Alan K. Mackworth
+978-1107195394
+12
+Algorithms to Live By: The Computer Science of Human Decisions
+Brian Christian and Tom Griffiths
+978-1627790369
+10
+Don Quixote
+Miguel de Cervantes
+978-0142437230
+10
+The Alchemist
+Paulo Coelho
+978-0061122415
+15
+The Da Vinci Code
+Dan Brown
+978-0307474278
+12
+The Catcher in the Rye
+J.D. Salinger
+0-316-76948-7
+8
+The Bible
+Various
+978-0310445142
+20
+Think and Grow Rich
+Napoleon Hill
+978-1585424337
+10
+The Lion, the Witch and the Wardrobe
+C.S. Lewis
+978-0060764889
+15
+The Harry Potter Series (Combined)
+J.K. Rowling
+Various
+30
+The Hobbit
+J.R.R. Tolkien
+0-618-00221-9
+12
+The Chronicles of Narnia
+C.S. Lewis
+978-0066238500
+10
+The Lord of the Rings
+J.R.R. Tolkien
+978-0544003415
+25
+The Little Prince
+Antoine de Saint-Exupéry
+978-0156012195
+18
+The Great Gatsby
+F. Scott Fitzgerald
+978-0743273565
+20
+The Girl with the Dragon Tattoo
+Stieg Larsson
+978-0307454546
+15
+A Tale of Two Cities
+Charles Dickens
+978-1503280785
+22
+The Hunger Games
+Suzanne Collins
+978-0439023528
+17
+The Kite Runner
+Khaled Hosseini
+978-1594631931
+16
+The Fault in Our Stars
+John Green
+978-0142424179
+14
+Gone with the Wind
+Margaret Mitchell
+978-1451635621
+19
+The Shining
+Stephen King
+978-0307743657
+13

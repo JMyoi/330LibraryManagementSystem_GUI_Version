@@ -16,10 +16,10 @@ public class Transaction {
         userName = "";
         bookName = "";
     }
-    Transaction(UUID user,String userName, String book, String bookName){
+    Transaction(UUID user,String userName, String bookisbn, String bookName){
         userId = user;
         this.userName = userName;
-        bookIsbn = book;
+        bookIsbn = bookisbn;
         this.bookName = bookName;
 
     }
