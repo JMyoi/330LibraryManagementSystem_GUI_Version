@@ -49,6 +49,7 @@ public class Library {
         return currentUser;
     }
     public String getCurrentUserName(){ return currentUser.getName();}
+    public ArrayList<Book> getBooks(){return books;}
     @FXML
     private TextField userNameText;
     @FXML
@@ -101,6 +102,32 @@ public class Library {
             System.out.println("****************************************************");
         }
     }
+    public ArrayList<Member> getMembers(){
+        ArrayList<Member> memArry = new ArrayList<>();
+        for(User user: users){
+            if(user instanceof Member){
+                memArry.add((Member) user);
+            }
+        }
+        System.out.println("returning all members");
+        for(Member member: memArry){
+            member.printInfo();
+        }
+        return memArry;
+    }
+    public ArrayList<Librarian> getLibrarians(){
+        ArrayList<Librarian> libArry = new ArrayList<>();
+        for(User user: users){
+            if(user instanceof Librarian){
+                libArry.add((Librarian) user);
+            }
+        }
+        System.out.println("returning all librarians: ");
+        for(Librarian librarian: libArry){
+            librarian.printInfo();
+        }
+        return libArry;
+    }
 
    public boolean isUserNameTaken(String name){
        for (User user : users) {
@@ -131,22 +158,10 @@ public class Library {
         System.out.println("Bob added.");
     }
 
-    public void addBook(){
-        Scanner input = new Scanner(System.in);//____________________________________________________
-        String bookName;
-        String authorName;
-        String isbn;
-        int copies;
-        System.out.println("Enter the name of the book: ");
-        bookName = input.nextLine();
-        System.out.println("Enter the name of the author: ");
-        authorName = input.nextLine();
-        System.out.println("Enter the ISBN: ");
-        isbn = input.nextLine();
-        System.out.println("Enter the number of copies: ");
-        copies = input.nextInt();
+    public void addBook(String isbn, String bookName, String authorName,int copies){
         Book newBook = new Book(isbn, bookName, authorName,copies);
         books.add(newBook);
+        System.out.println("book added.");
     }
 
     public void displayBooks() {
@@ -189,7 +204,7 @@ public class Library {
                             if(alreadyHave){
                                 System.out.println("You already have this book");
                             }else {
-                                Transaction newTransaction = new Transaction(currentUser.getId(), currentUser.getName(), books.get(bookNum - 1).getIsbn(), books.get(bookNum - 1).getName());
+                                Transaction newTransaction = new Transaction(currentUser.getId(), currentUser.getName(), books.get(bookNum - 1).getIsbn(), books.get(bookNum - 1).getBookName());
                                 books.get(bookNum - 1).decrementCopy();
                                 transactions.add(newTransaction);
                                 System.out.println("Transaction successful");
@@ -290,23 +305,23 @@ public class Library {
     private void loadDefaultTransactions(){
         //make transactions for user 1
         for(int i = 35; i<40; i++){
-            Transaction newTransaction = new Transaction(users.get(1).getId(), users.get(1).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            Transaction newTransaction = new Transaction(users.get(1).getId(), users.get(1).getName(), books.get(i).getIsbn(), books.get(i).getBookName());
             transactions.add(newTransaction);
         }
         for(int i = 0; i<4; i++){
-            Transaction newTransaction = new Transaction(users.get(2).getId(), users.get(2).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            Transaction newTransaction = new Transaction(users.get(2).getId(), users.get(2).getName(), books.get(i).getIsbn(), books.get(i).getBookName());
             transactions.add(newTransaction);
         }
         for(int i = 15; i<19; i++){
-            Transaction newTransaction = new Transaction(users.get(3).getId(), users.get(3).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            Transaction newTransaction = new Transaction(users.get(3).getId(), users.get(3).getName(), books.get(i).getIsbn(), books.get(i).getBookName());
             transactions.add(newTransaction);
         }
         for(int i = 20; i<24; i++){
-            Transaction newTransaction = new Transaction(users.get(4).getId(), users.get(4).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            Transaction newTransaction = new Transaction(users.get(4).getId(), users.get(4).getName(), books.get(i).getIsbn(), books.get(i).getBookName());
             transactions.add(newTransaction);
         }
         for(int i = 5; i<10; i++){
-            Transaction newTransaction = new Transaction(users.get(5).getId(), users.get(5).getName(), books.get(i).getIsbn(), books.get(i).getName());
+            Transaction newTransaction = new Transaction(users.get(5).getId(), users.get(5).getName(), books.get(i).getIsbn(), books.get(i).getBookName());
             transactions.add(newTransaction);
         }
     }

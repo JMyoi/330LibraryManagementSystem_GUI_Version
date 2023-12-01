@@ -27,7 +27,7 @@ public class Main extends Application {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
-            stage.setTitle("330 Library management System");
+            stage.setTitle("330 Library Management System");
             stage.setScene(scene);
             stage.show();
         }

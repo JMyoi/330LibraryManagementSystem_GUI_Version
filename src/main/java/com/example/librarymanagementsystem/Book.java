@@ -19,7 +19,7 @@ public class Book  {
         this.bookName = bookName;
         this.authorName = authorName;
     }
-    public String getName(){
+    public String getBookName(){
         return bookName;
     }
     public boolean noMoreCopies(){
@@ -28,6 +28,8 @@ public class Book  {
     public String getIsbn(){
         return isbn;
     }
+    public String getAuthorName(){return authorName;}
+    public int getNumCopies(){return numCopies;}
     public void printInfo(){
         System.out.println("\tBookName = "+bookName+"\n\tauthor = "+authorName+"\n\tISBN = "+isbn+"\n\tNumber of Copies = "+numCopies);
     }

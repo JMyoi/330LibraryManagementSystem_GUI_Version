@@ -52,7 +52,7 @@ public class loginController {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("LibrarianMenu.fxml"));
                 root = loader.load();
                 LibraryMenuController librarymenucontroller = loader.getController();
-                librarymenucontroller.displayName(UserName, library);
+                librarymenucontroller.displayLibrarianMenu(library);
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
