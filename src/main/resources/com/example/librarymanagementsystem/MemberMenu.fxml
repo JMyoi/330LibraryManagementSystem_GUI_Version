@@ -6,11 +6,16 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="MenuAnchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.memberMenuController">
-    <Label fx:id="welcomeLabelM" layoutX="127.0" layoutY="64.0" text="Welcome Member">
+    <Label fx:id="welcomeLabelM" layoutX="247.0" layoutY="20.0" text="Welcome Member">
       <font>
-         <Font size="25.0" />
+         <Font size="14.0" />
       </font></Label>
-   <Button layoutX="259.0" layoutY="143.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="90.0" text="Browse Books" />
-   <Button layoutX="259.0" layoutY="209.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="90.0" text="My Books" />
+   <Button layoutX="259.0" layoutY="146.0" mnemonicParsing="false" onAction="#displayBooks" prefHeight="36.0" prefWidth="90.0" text="Browse Books" />
+   <Button layoutX="260.0" layoutY="216.0" mnemonicParsing="false" onAction="#displayUserTransactions" prefHeight="36.0" prefWidth="90.0" text="My Books" />
    <Button fx:id="logoutBttn" layoutX="270.0" layoutY="318.0" mnemonicParsing="false" onAction="#Logout" prefHeight="25.0" prefWidth="68.0" text="Log Out" />
+   <Label fx:id="memberIdLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="20.0" prefWidth="600.0" text="Member Id: " textAlignment="CENTER">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
 </AnchorPane>

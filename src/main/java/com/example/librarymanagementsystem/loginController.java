@@ -35,18 +35,16 @@ public class loginController {
     public void handleLogin(ActionEvent event) throws IOException {
         String UserName = userNameText.getText();
         String pass = passwordText.getText();
-        System.out.println(UserName+pass);
         if(library.logIn(UserName, pass)){
             if(library.getCurrentUserType().equals("M")){
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("MemberMenu.fxml"));
                 root = loader.load();
                 memberMenuController membermenuController = loader.getController();
-                membermenuController.displayName(UserName, library);
+                membermenuController.displayMemberMenu( library);
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
-
             }
             else if (library.getCurrentUserType().equals("L")) {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("LibrarianMenu.fxml"));
@@ -64,14 +62,10 @@ public class loginController {
             errorLabel.setText("Incorrect credentials.");
             System.out.println("Incorrect credentials");
         }
-        System.out.println("current user is "+library.getCurrentUserName());
-        library.addBob();
-        library.displayUsers();
     }
     public void receiveLibrary(Library lib){
         library = lib;
         System.out.println("library received in login controller");
-        library.displayUsers();
     }
 
     public void switchSceneToCreateAccount(ActionEvent actionEvent) throws IOException {

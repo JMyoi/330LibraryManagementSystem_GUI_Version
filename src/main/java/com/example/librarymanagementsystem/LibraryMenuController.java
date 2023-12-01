@@ -34,8 +34,6 @@ public class LibraryMenuController {
 
     public void Logout(ActionEvent actionEvent) throws IOException {
         System.out.println("Logout pressed From LibrarymenuController: ");
-        library.displayUsers();
-        System.out.println("CurrentUser = "+ library.getCurrentUserName());
         library.Logout();
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));

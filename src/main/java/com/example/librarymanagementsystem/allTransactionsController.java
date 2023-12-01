@@ -43,7 +43,6 @@ public class allTransactionsController {
     void showTransactions(Library lib){
         library = lib;
         System.out.println("library received by allTransactions controller");
-        library.displayUsers();
         ArrayList<Transaction> allTransactions = library.getAllTransactions();
         ObservableList<Transaction> Transactions = FXCollections.observableArrayList(allTransactions);
         isbnColumn.setCellValueFactory(new PropertyValueFactory<Transaction, String>("bookIsbn"));

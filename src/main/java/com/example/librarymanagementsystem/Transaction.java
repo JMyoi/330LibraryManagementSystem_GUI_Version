@@ -7,10 +7,6 @@ public class Transaction {
     String userName;
     String bookName;
     private String bookIsbn;
-    //private int transactionId;
-    //private int dateOfIssue;
-    //private int dueDate;
-    //private static int nextId;
     Transaction(){
         userId = null;
         bookIsbn = null;

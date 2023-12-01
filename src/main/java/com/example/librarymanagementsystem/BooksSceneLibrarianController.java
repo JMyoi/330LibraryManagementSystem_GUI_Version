@@ -87,10 +87,10 @@ public class BooksSceneLibrarianController {
             int parsedCopies = Integer.parseInt(copies);
             System.out.println("adding this book to the library: "+title+Author+ISBN+"copies: "+parsedCopies);
             library.addBook(ISBN, title, Author, parsedCopies);
-            System.out.println("lets see if its added!!");
-            library.displayBooks();
             //update the book table
             receiveLibrary(library);
+
+
         }
         catch(NumberFormatException e){
             System.out.println(e.getMessage());
@@ -113,7 +113,6 @@ public class BooksSceneLibrarianController {
     public void receiveLibrary(Library lib){
         library = lib;
         System.out.println("library received in Librarians Book Scene");
-        library.displayUsers();
         //get the books from the library
         ArrayList<Book> books = library.getBooks();
         //populate table with book info

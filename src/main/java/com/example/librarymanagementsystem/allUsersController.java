@@ -56,7 +56,6 @@ public class allUsersController {
     public void receiveLibrary(Library lib){
         library = lib;
         System.out.println("library received in all Users Controller: ");
-        library.displayUsers();
         ArrayList<Member> allMembers = library.getMembers();
         //populate the member table
         ObservableList<Member> allMem = FXCollections.observableArrayList(allMembers);

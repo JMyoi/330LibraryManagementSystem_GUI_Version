@@ -24,11 +24,9 @@ public class CreateAccountPageController {
     public void receieveLibrary(Library lib){
         library = lib;
         System.out.println("library received in createAccount page controller: ");
-        library.displayUsers();
     }
 
     public void back(ActionEvent actionEvent) throws IOException {
-        System.out.println("going back to login page");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         root = loader.load();
         loginController logincontroller = loader.getController();
@@ -67,7 +65,6 @@ public class CreateAccountPageController {
         else{
             System.out.println("No member type was selected!!");
             typeNotSelectedLabel.setText("Please select a type.");
-            return;
         }
 
 
