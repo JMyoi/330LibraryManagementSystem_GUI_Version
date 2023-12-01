@@ -71,7 +71,15 @@ public class LibraryMenuController {
         stage.show();
     }
 
-    public void DisplayTransactions(ActionEvent actionEvent) {
+    public void DisplayTransactions(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("allTransactions.fxml"));
+        root = loader.load();
+        allTransactionsController transactionController = loader.getController();
+        transactionController.showTransactions(library);
+        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 

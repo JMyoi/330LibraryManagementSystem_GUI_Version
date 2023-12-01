@@ -226,6 +226,9 @@ public class Library {
             System.out.println("No transactions");
         }
     }
+    public ArrayList<Transaction> getAllTransactions(){
+        return transactions;
+    }
     public void printCurrentUserTransactions(){
         Scanner input = new Scanner(System.in);
         if(transactions.isEmpty()){
