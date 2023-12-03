@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="460.0" prefWidth="470.0" stylesheets="@../../../../java/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.Library">
-   <Button layoutX="314.0" layoutY="394.0" mnemonicParsing="false" onAction="#switchToHelloScene" text="Switch to HelloView" />
+<AnchorPane fx:id="loginAnchor" prefHeight="460.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.loginController">
    <Label layoutX="55.0" layoutY="56.0" prefHeight="68.0" prefWidth="384.0" text="Welcome to 330 Library Management System">
       <font>
          <Font size="17.0" />
@@ -16,7 +15,7 @@
    </Label>
    <PasswordField fx:id="passwordText" layoutX="136.0" layoutY="212.0" prefHeight="36.0" prefWidth="198.0" promptText="Password" />
    <TextField fx:id="userNameText" layoutX="136.0" layoutY="154.0" prefHeight="36.0" prefWidth="198.0" promptText="UserName" />
-   <Button fx:id="logInButton" layoutX="197.0" layoutY="276.0" mnemonicParsing="false" onAction="#logIn" text="Log In" />
-   <Button fx:id="createAccountButton" layoutX="174.0" layoutY="318.0" mnemonicParsing="false" onAction="#addUser" text="Create account" />
+   <Button fx:id="logInButton" layoutX="197.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleLogin" text="Log In" />
+   <Button fx:id="createAccountButton" layoutX="174.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchSceneToCreateAccount" text="Create account" />
    <Label fx:id="errorLabel" layoutX="168.0" layoutY="124.0" textFill="RED" />
 </AnchorPane>

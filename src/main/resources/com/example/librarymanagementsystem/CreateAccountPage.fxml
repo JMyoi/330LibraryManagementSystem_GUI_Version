@@ -8,29 +8,33 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.Library">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.CreateAccountPageController">
    <children>
       <Label layoutX="203.0" layoutY="35.0" text="Create an Account">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="backBttn" layoutX="26.0" layoutY="23.0" mnemonicParsing="false" onAction="#Logout" text="Back" />
-      <TextField layoutX="225.0" layoutY="139.0" promptText="User Name" />
-      <TextField layoutX="225.0" layoutY="187.0" promptText="Password" />
+      <Button fx:id="backBttn" layoutX="26.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <TextField fx:id="newUserName" layoutX="225.0" layoutY="122.0" promptText="User Name" />
+      <TextField fx:id="newUserPass" layoutX="226.0" layoutY="159.0" promptText="Password" />
       <Label fx:id="nameTakenLabel" layoutX="246.0" layoutY="82.0" textFill="#ef0000" />
-      <Label layoutX="271.0" layoutY="230.0" text="User Type">
+      <Label fx:id="typeNotSelectedLabel" layoutX="243.0" layoutY="226.0" textFill="RED">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <RadioButton layoutX="261.0" layoutY="257.0" mnemonicParsing="false" text="Member">
+      <RadioButton fx:id="memberBttn" layoutX="261.0" layoutY="252.0" mnemonicParsing="false" text="Member">
          <toggleGroup>
             <ToggleGroup fx:id="typeRadioBttn" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="260.0" layoutY="282.0" mnemonicParsing="false" text="Librarian" toggleGroup="$typeRadioBttn" />
-      <Button layoutX="269.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Create" />
+      <RadioButton fx:id="LibrarianBttn" layoutX="261.0" layoutY="278.0" mnemonicParsing="false" text="Librarian" toggleGroup="$typeRadioBttn" />
+      <Button fx:id="createAccountBttn" layoutX="266.0" layoutY="322.0" mnemonicParsing="false" onAction="#addUser" prefHeight="25.0" prefWidth="57.0" text="Create" />
+      <Label layoutX="264.0" layoutY="200.0" text="User Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
