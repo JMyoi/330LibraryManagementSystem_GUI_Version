@@ -14,7 +14,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Main extends Application {
-    Library library = new Library();
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -24,6 +23,7 @@ public class Main extends Application {
 //            stage.setTitle("330 Library management System");
 //            stage.setScene(scene);
 //            stage.show();
+            Library library = new Library();
             library.showLogin(stage);
 //            Timer timer = new Timer();
 //            TimerTask task = new TimerTask() {
@@ -42,9 +42,7 @@ public class Main extends Application {
 
 
 
-    public void PM(){
-        System.out.println("after launch: "+library.printMe());
-    }
+
 
 
     public static void main(String[] args) throws FileNotFoundException {
