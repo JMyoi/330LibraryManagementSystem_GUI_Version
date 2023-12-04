@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="606.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.myBooksSceneController">
+<AnchorPane prefHeight="606.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/21" stylesheets="myBooksScene.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.myBooksSceneController">
    <children>
       <Button layoutX="27.0" layoutY="20.0" mnemonicParsing="false" onAction="#back" text="back" />
       <TableView fx:id="transactionsTable" layoutX="27.0" layoutY="150.0" prefHeight="431.0" prefWidth="386.0">

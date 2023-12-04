@@ -5,25 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec39cd9-08a8-42f5-8bc9-0361c1629a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/memberBooksSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/memberBooksScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/myBooksScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/BooksSceneLibrarian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CreateAccountPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LibrarianMenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/MemberMenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/allTransactions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/allUsers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/memberBooksScene.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/myBooksScene.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Backend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/myBooksSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/BooksSceneLibrarianController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/BooksSceneLibrarianController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/CreateAccountPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/CreateAccountPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/LibraryMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/LibraryMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/allTransactionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/allTransactionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/allUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/allUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/memberMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/memberMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/sceneSwitch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/BooksSceneLibrarian.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/BooksSceneLibrarian.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allTransactions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allTransactions.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allUsers.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/memberBooksScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/memberBooksScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/myBooksScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/myBooksScene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,33 +56,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "PostCrisis",
-    "last_opened_file_path": "C:/Users/jaych/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Scene Builder/SceneBuilder.lnk",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.23333333",
-    "settings.editor.selected.configurable": "preferences.JavaFX",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jaych/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Scene Builder/SceneBuilder.lnk&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.23333333&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\School\LibraryManagementSystem\src\main\java" />
+      <recent name="C:\School\LibraryManagementSystem\src\main\resources" />
       <recent name="C:\School\LibraryManagementSystem\src\main\resources\com\example\librarymanagementsystem" />
+      <recent name="C:\School\LibraryManagementSystem\src" />
       <recent name="C:\School\LibraryManagementSystem\src\main" />
-      <recent name="C:\School\LibraryManagementSystem\src\main\java\com\example\librarymanagementsystem" />
+      <recent name="C:\School\LibraryManagementSystem\src\main\java" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -97,6 +100,8 @@
       <workItem from="1700859662505" duration="5407000" />
       <workItem from="1701276727661" duration="29002000" />
       <workItem from="1701373125222" duration="27468000" />
+      <workItem from="1701529989307" duration="2531000" />
+      <workItem from="1701656649851" duration="3094000" />
     </task>
     <servers />
   </component>

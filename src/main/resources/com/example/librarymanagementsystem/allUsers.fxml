@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="537.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.allUsersController">
+<AnchorPane prefHeight="537.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/21" stylesheets="allUsers.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.allUsersController">
    <children>
       <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
       <TableView fx:id="memberTable" layoutX="20.0" layoutY="58.0" prefHeight="461.0" prefWidth="291.0">
