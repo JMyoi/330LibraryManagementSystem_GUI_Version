@@ -8,23 +8,25 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="439.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.allTransactionsController">
+<AnchorPane prefHeight="700.0" prefWidth="700.0" styleClass="frame" stylesheets="allTransactions.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.allTransactionsController">
    <children>
-      <Button fx:id="backBttn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccd4db" height="38.0" layoutX="213.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
-      <Label layoutX="251.0" layoutY="19.0" text="Transactions">
+      <Button fx:id="backBttn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="78.0" text="Back">
          <font>
             <Font size="18.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccd4db" height="38.0" layoutX="265.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
+      <Label layoutX="299.0" layoutY="27.0" text="Transactions">
+         <font>
+            <Font size="19.0" />
          </font>
       </Label>
-      <TableView fx:id="transactionsTable" layoutX="8.0" layoutY="67.0" prefHeight="366.0" prefWidth="583.0">
-        <columns>
+      <TableView fx:id="transactionsTable" layoutX="60.0" layoutY="71.0" prefHeight="559.0" prefWidth="588.0">
+         <columns>
             <TableColumn fx:id="nameColumn" prefWidth="106.6666898727417" text="Name" />
             <TableColumn fx:id="titleColumn" prefWidth="148.00003814697266" text="Title" />
-          <TableColumn fx:id="isbnColumn" prefWidth="143.33331298828125" text="ISBN" />
-          <TableColumn fx:id="memberIdColumn" prefWidth="185.99996948242188" text="member ID" />
-        </columns>
+            <TableColumn fx:id="isbnColumn" prefWidth="143.33331298828125" text="ISBN" />
+            <TableColumn fx:id="memberIdColumn" prefWidth="185.99996948242188" text="member ID" />
+         </columns>
       </TableView>
    </children>
 </AnchorPane>

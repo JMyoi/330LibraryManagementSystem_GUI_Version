@@ -1,0 +1,28 @@
+
+#BookAnchor {
+    -fx-background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/1-old-books-on-a-library-luoman.jpg");
+
+}
+
+.button {
+    -fx-background-radius: 20;
+}
+
+
+.table-view {
+    -fx-background-radius: 20;
+    -fx-background-color: #333;
+}
+
+
+.text-field {
+    -fx-background-radius: 20;
+}
+
+
+.button:hover {
+    -fx-background-color: #666;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.7), 10, 0, 0, 0);
+}
+

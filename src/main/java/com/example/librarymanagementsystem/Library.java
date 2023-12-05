@@ -205,7 +205,11 @@ public class Library {
     }
 
     private void loadDefaultUser() throws FileNotFoundException {
-        File inFile = new File("/Users/Jay/School/330UIburner/src/main/defaultUsers.txt");
+
+
+        File inFile = new File("src/main/defaultUsers.txt");
+
+
         Scanner in = new Scanner(inFile);
         while(in.hasNext()){
             String userName = in.next();
@@ -223,7 +227,11 @@ public class Library {
         in.close();
     }
     private void loadDefaultBooks() throws FileNotFoundException{
-        File inFile = new File("/Users/Jay/School/330UIburner/src/main/defaultBooks.txt");
+
+
+        File inFile = new File("src/main/defaultBooks.txt");
+
+
         Scanner in = new Scanner(inFile);
         while(in.hasNext()){
             String BookName = in.nextLine();

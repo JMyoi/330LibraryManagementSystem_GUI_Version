@@ -8,31 +8,34 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="537.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.allUsersController">
+<AnchorPane fx:id="UserAnchor" prefHeight="700.0" prefWidth="700.0" styleClass="frame" stylesheets="allUsers.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.allUsersController">
    <children>
-      <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
-      <TableView fx:id="memberTable" layoutX="20.0" layoutY="58.0" prefHeight="461.0" prefWidth="291.0">
+      <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="61.0" text="back">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <TableView fx:id="memberTable" layoutX="20.0" layoutY="58.0" prefHeight="628.0" prefWidth="291.0">
         <columns>
           <TableColumn fx:id="memberNameColumn" prefWidth="94.66665649414062" text="Name" />
           <TableColumn fx:id="memberIDcolumn" minWidth="0.0" prefWidth="195.33331298828125" text="ID" />
         </columns>
       </TableView>
-      <TableView fx:id="librarianTable" layoutX="320.0" layoutY="58.0" prefHeight="461.0" prefWidth="291.0">
+      <TableView fx:id="librarianTable" layoutX="320.0" layoutY="58.0" prefHeight="628.0" prefWidth="365.0">
          <columns>
             <TableColumn fx:id="librarianNameColumn" prefWidth="94.66665649414062" text="Name" />
             <TableColumn fx:id="librarianIDcolumn" minWidth="0.0" prefWidth="195.33331298828125" text="ID" />
          </columns>
       </TableView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3dae0" height="25.0" layoutX="115.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="101.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5dbe0" height="25.0" layoutX="415.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="101.0" />
-      <Label layoutX="136.0" layoutY="29.0" text="Members">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3dae0" height="32.0" layoutX="119.0" layoutY="19.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5dbe0" height="32.0" layoutX="405.0" layoutY="19.0" stroke="BLACK" strokeType="INSIDE" width="198.0" />
+      <Label layoutX="163.0" layoutY="19.0" prefHeight="33.0" prefWidth="88.0" text="Members">
          <font>
-            <Font size="14.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="436.0" layoutY="29.0" text="Librarians">
+      <Label layoutX="461.0" layoutY="18.0" text="Librarians">
          <font>
-            <Font size="14.0" />
+            <Font size="23.0" />
          </font>
       </Label>
    </children>

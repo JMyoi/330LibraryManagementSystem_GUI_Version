@@ -5,17 +5,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="MenuAnchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.memberMenuController">
-    <Label fx:id="welcomeLabelM" layoutX="247.0" layoutY="20.0" text="Welcome Member">
+<AnchorPane fx:id="MenuAnchor" prefHeight="700.0" prefWidth="700.0" styleClass="frame" stylesheets="MemberMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.memberMenuController">
+    <Label fx:id="welcomeLabelM" alignment="CENTER" layoutX="91.0" layoutY="71.0" prefHeight="61.0" prefWidth="527.0" text="    Welcome Member" textAlignment="CENTER" textFill="WHITE" wrapText="true">
       <font>
-         <Font size="14.0" />
+         <Font size="19.0" />
       </font></Label>
-   <Button layoutX="259.0" layoutY="146.0" mnemonicParsing="false" onAction="#displayBooks" prefHeight="36.0" prefWidth="90.0" text="Browse Books" />
-   <Button layoutX="260.0" layoutY="216.0" mnemonicParsing="false" onAction="#displayUserTransactions" prefHeight="36.0" prefWidth="90.0" text="My Books" />
-   <Button fx:id="logoutBttn" layoutX="270.0" layoutY="318.0" mnemonicParsing="false" onAction="#Logout" prefHeight="25.0" prefWidth="68.0" text="Log Out" />
-   <Label fx:id="memberIdLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="20.0" prefWidth="600.0" text="Member Id: " textAlignment="CENTER">
+   <Button fx:id="brbtn" layoutX="276.0" layoutY="212.0" mnemonicParsing="false" onAction="#displayBooks" prefHeight="42.0" prefWidth="154.0" text="Browse Books" />
+   <Button fx:id="mybtn" layoutX="276.0" layoutY="304.0" mnemonicParsing="false" onAction="#displayUserTransactions" prefHeight="42.0" prefWidth="153.0" text="My Books" />
+   <Button fx:id="logoutBttn" layoutX="276.0" layoutY="410.0" mnemonicParsing="false" onAction="#Logout" prefHeight="48.0" prefWidth="152.0" text="Log Out" />
+   <Label fx:id="memberIdLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="130.0" prefHeight="42.0" prefWidth="600.0" text="Member Id: " textAlignment="CENTER" textFill="WHITE">
       <font>
-         <Font size="14.0" />
+         <Font size="17.0" />
       </font>
    </Label>
 </AnchorPane>

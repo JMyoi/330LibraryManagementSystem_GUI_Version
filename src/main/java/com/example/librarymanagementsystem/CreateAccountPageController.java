@@ -48,8 +48,12 @@ public class CreateAccountPageController {
         String name = newUserName.getText();
         String password = newUserPass.getText();
         System.out.println("new user will be: "+name+" and pass is "+password);
+        if(newUserName.getText().isBlank()||newUserPass.getText().isBlank()){
+            nameTakenLabel.setText(" * Empty fields * ");
+            return;
+        }
         if(library.isUserNameTaken(name)){
-            nameTakenLabel.setText("UserName Taken.");
+            nameTakenLabel.setText(" * UserName Taken * ");
             return;
         }
         if(memberBttn.isSelected()){
@@ -64,7 +68,7 @@ public class CreateAccountPageController {
         }
         else{
             System.out.println("No member type was selected!!");
-            typeNotSelectedLabel.setText("Please select a type.");
+            typeNotSelectedLabel.setText("* Please select a type * ");
         }
 
 
