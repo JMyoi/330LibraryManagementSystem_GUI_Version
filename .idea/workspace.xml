@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec39cd9-08a8-42f5-8bc9-0361c1629a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/BooksSceneLibrarian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CreateAccountPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LibrarianMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MemberMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/allTransactions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/allUsers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/memberBooksScene.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/myBooksScene.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/BooksSceneLibrarian.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/BooksSceneLibrarian.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allTransactions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allTransactions.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allUsers.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/memberBooksScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/memberBooksScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/myBooksScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/myBooksScene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +83,8 @@
       <workItem from="1701276727661" duration="29002000" />
       <workItem from="1701373125222" duration="27468000" />
       <workItem from="1701529989307" duration="2531000" />
-      <workItem from="1701656649851" duration="3094000" />
+      <workItem from="1701656649851" duration="4304000" />
+      <workItem from="1701734060666" duration="8465000" />
     </task>
     <servers />
   </component>
