@@ -63,7 +63,7 @@ helped me understand and solve niche bugs as stated here.
 <p>Contributors and their roles</p>
 <ul>
   <li>Jay Chen - Developer</li>
-  <li>Joshi Joseph - QA</li>
+  <li>Joshi Joseph - QA and CSS</li>
   <li>Brain LaBarbera - Manager/TechLead</li>
 </ul>
 <p>This project is for CSC330 - Object-Oriented Software Design as the final project of the class.</p>
