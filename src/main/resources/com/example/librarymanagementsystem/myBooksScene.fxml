@@ -22,7 +22,7 @@
       </TableView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbe2ea" height="114.0" layoutX="213.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="241.0" />
       <Button fx:id="returnbtn" layoutX="300.0" layoutY="94.0" mnemonicParsing="false" onAction="#removeTransaction" text="Return" />
-      <Label fx:id="errorLabel" alignment="CENTER" layoutX="106.0" layoutY="68.0" prefHeight="18.0" prefWidth="227.0" textFill="RED" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="220.0" layoutY="68.0" prefHeight="18.0" prefWidth="227.0" textFill="RED" />
       <Label layoutX="256.0" layoutY="40.0" prefHeight="26.0" prefWidth="155.0" text="My Transactions">
          <font>
             <Font size="20.0" />

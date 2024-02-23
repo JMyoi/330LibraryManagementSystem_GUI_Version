@@ -10,6 +10,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         try {
+
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setTitle("330 Library Management System");
