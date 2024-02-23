@@ -42,8 +42,13 @@ members.</li>
   <li>As a Librarian, I want to be able to view all the users in the library.
 </li>
 </ul>
+<h2>UML diagram</h2>
+<img src = "images/Screenshot 2024-02-22 235304.png" width = "500" height = "500">
 
-<h3>Adversity; Persistence and Object Reinitialization Bug</h3>
+<h2>Flow diagram</h2>
+<img src = "images/Screenshot 2024-02-22 235304.png" width = "500" height = "500">
+
+<h2>Adversity; Persistence and Object Reinitialization Bug</h2>
 <p>
 A significant challenge we encountered during the GUI development was the reinitialization of
 the library object upon switching between scenes. The issue surfaced when, upon switching
@@ -60,7 +65,7 @@ helped me understand and solve niche bugs as stated here.
 </p>
 
 
-<p>Contributors and their roles</p>
+<h3>Contributors and their roles</h3>
 <ul>
   <li>Jay Chen - Developer</li>
   <li>Joshi Joseph - QA and CSS</li>
