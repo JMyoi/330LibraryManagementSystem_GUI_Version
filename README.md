@@ -42,8 +42,6 @@ members.</li>
   <li>As a Librarian, I want to be able to view all the users in the library.
 </li>
 </ul>
-<h1>Preview and Snapshots</h1>
-
 
 <h3>Adversity; Persistence and Object Reinitialization Bug</h3>
 <p>
@@ -69,3 +67,6 @@ helped me understand and solve niche bugs as stated here.
   <li>Brain LaBarbera - Manager/TechLead</li>
 </ul>
 <p>This project is for CSC330 - Object-Oriented Software Design as the final project of the class.</p>
+
+<h1>Preview and Snapshots</h1>
+
