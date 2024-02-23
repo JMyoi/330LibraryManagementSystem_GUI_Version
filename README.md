@@ -1,4 +1,4 @@
-<h1>330 Library Management System GUI version</h1>
+<h1>📖330 Library Management System GUI version📖</h1>
 <p>330 Library Management System is a software application and platform designed to automate and 
   streamline various tasks and processes involved in managing a library's resources. Its primary purpose is to
   efficiently organize, catalog, circulate, and track library materials while providing easy access to library users.</p>
@@ -7,7 +7,7 @@
   <a href = "https://github.com/JMyoi/330_LMS_Terminal_Version">HERE</a></p>
   
 
-<h4>Technology used</h4>
+<h3>🧪Technology used</h3>
 <ul>
   <li>Java</li>
     <li>JavaFX</li>
@@ -17,7 +17,7 @@
 <p>This application caters to two types of users found in the library environment the librarian and the member. Core functionalities are given
   for each type of user providing an easy and satisfying process. </p>
   
-<h2>User Stories</h2>
+<h2>☝️🤓User Stories</h2>
 As a User
 <ul>
   <li> As a user, I want to be able to create a new account
@@ -42,13 +42,13 @@ members.</li>
   <li>As a Librarian, I want to be able to view all the users in the library.
 </li>
 </ul>
-<h2>UML diagram</h2>
+<h2>👀UML diagram</h2>
 <img src = "images/UMLdiagram.png" >
 
-<h2>Flow diagram</h2>
+<h2>🌊Flow diagram</h2>
 <img src = "images/FlowDiagram.png" >
 
-<h2>Adversity; Persistence and Object Reinitialization Bug</h2>
+<h2>🥲Adversity; Persistence and Object Reinitialization Bug</h2>
 <p>
 A significant challenge we encountered during the GUI development was the reinitialization of
 the library object upon switching between scenes. The issue surfaced when, upon switching
@@ -65,7 +65,7 @@ helped me understand and solve niche bugs as stated here.
 </p>
 
 
-<h3>Contributors and their roles</h3>
+<h3>🤝Contributors and their roles</h3>
 <ul>
   <li>Jay Chen - Developer</li>
   <li>Joshi Joseph - QA and CSS</li>
@@ -73,7 +73,7 @@ helped me understand and solve niche bugs as stated here.
 </ul>
 <p>This project is for CSC330 - Object-Oriented Software Design as the final project of the class.</p>
 
-<h1>Preview and Snapshots</h1>
+<h1>🫣Preview and Snapshots</h1>
 <img src = "images/Screenshot 2024-02-22 235249.png" width = "500" >
 <img src = "images/Screenshot 2024-02-22 235259.png" width = "500" height = "500">
 <img src = "images/Screenshot 2024-02-22 235304.png" width = "500" height = "500">
