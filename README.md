@@ -69,4 +69,13 @@ helped me understand and solve niche bugs as stated here.
 <p>This project is for CSC330 - Object-Oriented Software Design as the final project of the class.</p>
 
 <h1>Preview and Snapshots</h1>
+<img src = "images/Screenshot 2024-02-22 235249.png" width = "500" >
+<img src = "images/Screenshot 2024-02-22 235259.png" width = "500" height = "500">
+<img src = "images/Screenshot 2024-02-22 235304.png" width = "500" height = "500">
+<img src = "images/Screenshot 2024-02-22 235310.png" width = "500" height = "500">
+<img src = "images/Screenshot 2024-02-22 235326.png" width = "500" height = "500">
+<img src = "images/Screenshot 2024-02-22 235347.png" width = "500" height = "500">
+<img src = "images/Screenshot 2024-02-22 235401.png" width = "500" height = "500">
+<img src = "images/Screenshot 2024-02-22 235412.png" width = "500" height = "500">
+
 
