@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9ae532e-9d50-49f9-b3c7-571dd72db20e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/BooksSceneLibrarian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CreateAccountPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LibrarianMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MemberMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/allTransactions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/allUsers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/memberBooksScene.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/myBooksScene.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/defaultUsers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/defaultUsers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/CreateAccountPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/CreateAccountPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/librarymanagementsystem/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/BooksSceneLibrarian.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/BooksSceneLibrarian.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/CreateAccountPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/LibrarianMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/MemberMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allTransactions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allTransactions.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/allUsers.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/memberBooksScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/memberBooksScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/myBooksScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/librarymanagementsystem/myBooksScene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +16,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
-  <component name="ProjectId" id="2Zk8OxJWNtwZeGi2v5QXEJhWig7" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -60,8 +32,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Merging main",
@@ -99,7 +69,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
