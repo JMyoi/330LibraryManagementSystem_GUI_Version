@@ -9,8 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="699.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/21" stylesheets="BooksSceneLibrarian.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.BooksSceneLibrarianController">
+<AnchorPane fx:id="BookAnchor" prefHeight="700.0" prefWidth="700.0" stylesheets="BooksSceneLibrarian.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.BooksSceneLibrarianController">
    <children>
       <Button fx:id="backBttn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" text="Back" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadee2" height="191.0" layoutX="143.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="453.0" />

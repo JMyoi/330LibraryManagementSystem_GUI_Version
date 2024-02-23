@@ -1,1 +1,50 @@
+#CreateAnchor {
+    -fx-background-image: url("https://as2.ftcdn.net/v2/jpg/06/19/95/45/1000_F_619954512_EyNJQBH0bUwXGC4EtBoLnmfvBZ7cI421.jpg");
+    -fx-background-position: right;
+    -fx-border-color: black;
+}
+#heading{
+    -fx-text-fill: White;
+    -fx-font-weight: bold;
+    -fx-font-size: 26px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.9), 5, 0, 0, 0);
+    -fx-cursor: hand;
+    -fx-transition: transform 0.5s;
 
+}
+#usertype{
+    -fx-text-fill: White;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.9), 5, 0, 0, 0);
+    -fx-cursor: hand;
+    -fx-transition: transform 0.5s;
+}
+#heading:hover {
+    -fx-transform: scale(1.1);
+}
+#newUserName,#newUserPass{
+    -fx-text-fill: White;
+    -fx-background-color: Black;
+}
+#memberBttn,#createAccountBttn,#librarianBttn,#backBttn{
+    -fx-transition: transform 0.9s;
+
+}
+#memberBttn,#LibrarianBttn{
+    -fx-text-fill: White;
+    -fx-font-weight: bold;
+}
+#createAccountBttn,#backBttn{
+    -fx-background-color: #504c4c;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+#memberBttn:hover, #createAccountBttn:hover,#librarianBttn:hover,#backBttn:hover{
+    -fx-text-fill: white;
+    -fx-transform: scale(1.1);
+}
+#backBttn:hover,#createAccountBttn:hover{
+    -fx-background-color: #775c33;
+    -fx-text-fill: white;
+    -fx-transform: scale(1.1);
+}

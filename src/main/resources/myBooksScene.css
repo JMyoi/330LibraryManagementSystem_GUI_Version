@@ -1,0 +1,14 @@
+.frame{
+    -fx-background-image: url("https://as2.ftcdn.net/v2/jpg/06/19/95/45/1000_F_619954512_EyNJQBH0bUwXGC4EtBoLnmfvBZ7cI421.jpg");
+    -fx-background-position: right;
+    -fx-border-color: black;
+}
+#backbtn,#returnbtn{
+    -fx-background-color: #888686;
+    -fx-transition: transform 0.5s;
+}
+#backbtn:hover,#returnbtn:hover{
+    -fx-background-color: #775C33FF;
+    -fx-text-fill: white;
+    -fx-transform: scale(1.1);
+}

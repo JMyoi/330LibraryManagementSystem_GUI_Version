@@ -1,3 +1,20 @@
-.label{
-    -fx-background-color:pink;
+
+#UserAnchor {
+    -fx-background-image: url("https://libraryfurnitureinternational.com/wp-content/uploads/2019/10/DSC_0292.jpg");
+
+}
+.button,
+#memberNameColumn, #memberIDcolumn, #librarianNameColumn, #librarianIDcolumn {
+    -fx-background-radius: 20;
+}
+.table-view {
+    -fx-background-radius: 20; /* Adjust the radius as needed */
+    -fx-background-color: gray; /* Set the background color to gray */
+}
+
+
+.button:hover {
+    -fx-opacity: 0.7;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
 }

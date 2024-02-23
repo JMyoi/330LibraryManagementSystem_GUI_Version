@@ -1,0 +1,14 @@
+#memberbook {
+    -fx-background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/1-old-books-on-a-library-luoman.jpg");
+
+}
+#getbtn,#backbtn{
+    -fx-background-color: #727070;
+    -fx-transition: transform 0.5s;
+}
+#getbtn:hover,#backbtn:hover{
+    -fx-background-color: #775C33FF;
+    -fx-text-fill: white;
+    -fx-transform: scale(1.1);
+
+}
