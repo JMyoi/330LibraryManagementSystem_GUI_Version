@@ -43,10 +43,10 @@ members.</li>
 </li>
 </ul>
 <h2>UML diagram</h2>
-<img src = "images/Screenshot 2024-02-22 235304.png" width = "500" height = "500">
+<img src = "images/UMLdiagram.png" >
 
 <h2>Flow diagram</h2>
-<img src = "images/Screenshot 2024-02-22 235304.png" width = "500" height = "500">
+<img src = "images/FlowDiagram.png" >
 
 <h2>Adversity; Persistence and Object Reinitialization Bug</h2>
 <p>
